@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        display: flex;
+height:400px ;
+width:300px ;
+background-color:chocolate ;
+flex-direction: column;
+transition: all ease .25s;
+    }
+    .item-1{
+height:100% ;
+background-color: rgb(0, 0, 255);
+margin:5px ;
+display: flex;
+flex-direction: column;
+    }
+    .item-2{
+display: flex;
+justify-content:space-around ;
+height:50px ;
+    }
+    .info{
+        width:50% ;
+        background-color: darkmagenta;
+        height:100% ;
+        margin:5px ;
+    }
+    body {
+        display: flex;
+        height:100vh ;
+        justify-content:center ;
+        align-items: center;
+    }
+    h1 {
+color:rgb(255, 255, 255) ;
+    }
+    .container:hover {
+        box-shadow:4px 3px 7px 1px rgb(0, 0, 255) ;
+        transform:translate(-4px,-4px) ;
+    
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <h1>Привет мир </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa perspiciatis, dicta nulla nisi dolore expedita earum inventore aperiam hic adipisci consequuntur illum cupiditate ullam, maxime quas vero recusandae eaque numquam.</p>
+
+        </div>
+        <div class="item-2">
+            <div class="info">Выйти</div>
+            <div class="info">Подумать</div> 
+                 
+                
+        </div>
+    </div>
+</body>
+</html>
