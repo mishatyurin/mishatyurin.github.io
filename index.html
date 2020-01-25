@@ -1,19 +1,92 @@
 <!DOCTYPE html>
-<html lang="Ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-     
+    .nawbar {
+display: flex;
+background-color:darkcyan ;
+width:100% ;
+justify-content: space-between;
+
+align-items: center;
+    }
+    body{
+        margin: 0;
+    }
+    .logo{
+        color:yellow ;
+        padding: 1em;
+        font-weight: bold;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+    .menu a{
+        color: white;
+        padding: 1em;
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        text-decoration: none;
+    }
+    .first,.second,.third{
+height:100vh ;
+display: flex;
+justify-content:center   ;
+align-items: center;
+    }
+.first{
+background-color:royalblue ;
+
+}
+.second{
+    background-color: skyblue;
+}
+.third{
+    background-color: teal;
+}
+.container{
+border:5px solid mediumblue;
+padding:5em ;
+border-radius: 5px;
+transition: all ease.3s;
+}
+.container:hover{
+box-shadow:15px 14px 10px 0 rgb(243, 0, 0) ;
+transform:translate(-4px,  -4px) ;
+
+}
+.container a{
+font-size: 2em;
+color: rebeccapurple;
+text-decoration: none;
+font-weight: bold;
+}
+html{
+    scroll-behavior: smooth;
+}
     </style>
 </head>
 <body>
-<a href="task_1.html">Задание один</a>
-<a href="task_2.html">Второе залание</a>
-<a href="my_page.html">Моя сраничка</a>
-    <a href="hover.html">урок 6</a>
-     <a href="hover-2.html">урок 6 2.0</a>
+    <div class="nawbar">
+        <div class="logo">
+            logo
+        </div>
+        <div class="menu">
+            <a href="#f" >home</a>
+        <a href="#s" >сок</a>
+        <a href="#t" >кок</a>
+    </div>
+    </div>
+<div class="first" id="f">
+    <div class="container"><a href="home.html">home</a></div>
+</div>
+<div class="second" id="s">
+    <div class="container"><a href="сок.html">сок</a></div>
+</div>
+<div class="third" id="t">
+    <div class="container"><a href="кок.html">кок</a></div>
+</div>
 </body>
 </html>
