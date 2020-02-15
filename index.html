@@ -3,90 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    .nawbar {
+ body{
+height: 100vh;
+overflow-y: hidden;
+background-image: url("img/mono.jpeg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 display: flex;
-background-color:darkcyan ;
-width:100% ;
-justify-content: space-between;
-
+justify-content: center;
 align-items: center;
-    }
-    body{
-        margin: 0;
-    }
-    .logo{
-        color:yellow ;
-        padding: 1em;
-        font-weight: bold;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    }
-    .menu a{
-        color: white;
-        padding: 1em;
-        font-weight: 700;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        text-decoration: none;
-    }
-    .first,.second,.third{
-height:100vh ;
-display: flex;
-justify-content:center   ;
-align-items: center;
-    }
-.first{
-background-color:royalblue ;
+}
+.logo{
+color: #EA5A19;
+font-size: 4em;
+font-weight: 900;
+font-family: sans-serif;
+padding: 1em;
+text-align: center;
 
 }
-.second{
-    background-color: skyblue;
+.text{
+color: white;
+font-size: 1.25em;
+max-width: 75%;
+margin: auto;
+text-align: center;
 }
-.third{
-    background-color: teal;
-}
-.container{
-border:5px solid mediumblue;
-padding:5em ;
-border-radius: 5px;
-transition: all ease.3s;
-}
-.container:hover{
-box-shadow:15px 14px 10px 0 rgb(243, 0, 0) ;
-transform:translate(-4px,  -4px) ;
-
-}
-.container a{
-font-size: 2em;
-color: rebeccapurple;
-text-decoration: none;
-font-weight: bold;
-}
-html{
-    scroll-behavior: smooth;
-}
-    </style>
+    </style>  
 </head>
 <body>
-    <div class="nawbar">
-        <div class="logo">
-            logo
-        </div>
-        <div class="menu">
-            <a href="#f" >home</a>
-        <a href="#s" >сок</a>
-        <a href="#t" >кок</a>
+    <div class="container">
+        <div class="logo">logo</div>
+        <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  magnam pariatur in, laudantium, sunt eos minima illo distinctio voluptas veniam rem odio recusandae ab consectetur saepe doloribus!</div>
     </div>
-    </div>
-<div class="first" id="f">
-    <div class="container"><a href="home.html">home</a></div>
-</div>
-<div class="second" id="s">
-    <div class="container"><a href="сок.html">сок</a></div>
-</div>
-<div class="third" id="t">
-    <div class="container"><a href="кок.html">кок</a></div>
-</div>
 </body>
 </html>
