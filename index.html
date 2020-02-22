@@ -5,39 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
- body{
+.bgimg-1{
+background-image: url(img_parallax.jpg);
 height: 100vh;
-overflow-y: hidden;
-background-image: url("/img/mono.jpeg");
-background-position: center;
-background-size: cover;
 background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 display: flex;
 justify-content: center;
 align-items: center;
-}
-.logo{
-color: #EA5A19;
-font-size: 4em;
-font-weight: 900;
-font-family: sans-serif;
-padding: 1em;
-text-align: center;
 
 }
-.text{
+.bgimg-2{
+background-image: url(img_parallax2.jpg);
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+body{
+margin: 0;
+
+}
+.border{
+padding: 2em;
+background-color: white;
+font-size: 2.5em;
+}
+div p{
+padding: 1.75em 1em;
+margin: 0em;
+background-color: black;
 color: white;
+font-weight: 600;
 font-size: 1.25em;
-max-width: 75%;
-margin: auto;
 text-align: center;
 }
-    </style>  
+
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">logo</div>
-        <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  magnam pariatur in, laudantium, sunt eos minima illo distinctio voluptas veniam rem odio recusandae ab consectetur saepe doloribus!</div>
+   <div class="bgimg-1">
+       <div class="caption">
+           <span class="border">Прокрути вниз</span>
+        </div>
+   </div>
+<div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A expedita quos, perferendis, quo est sunt nulla voluptatem rerum animi quae illum excepturi voluptates saepe obcaecati officiis numquam odio. Impedit, corrupti.</p>
+</div>
+<div class="bgimg-2">
+    <div class="caption">
+        <span class="border">Это паролакс</span>
+    </div>
+</div>
     </div>
 </body>
 </html>
